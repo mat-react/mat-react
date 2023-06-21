@@ -1,0 +1,224 @@
+/* position */
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.relative {
+    position: relative;
+}
+.static {
+    position: static;
+}
+
+
+/* position matrix */
+.top-0 {
+    top: 0; 
+}
+.bottom-0 {
+    bottom: 0;
+}
+.left-0 {
+    left: 0;
+}
+.right-0 {
+    right: 0;
+}
+
+
+/* width height */
+.w-100vw {
+    width: 100vw;
+}
+.h-100vh {
+    height: 100vh;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.w-20 {
+    width: 20px!important;
+}
+.w-20 {
+    height: 20px!important;
+}
+.w-auto {
+    width: auto;
+}
+.h-auto {
+    height: auto;
+}
+
+
+
+
+/* dispaly */
+.flex {
+    display: flex;
+}
+.block {
+    display: block;
+}
+.none {
+    display: none;
+}
+.grid {
+    display: grid;
+}
+
+.gc-gap-10 {
+    grid-column-gap: 10px;
+}
+.gc-gap-15 {
+    grid-column-gap: 15px;
+}
+.gr-gap-20 {
+    grid-row-gap: 20px;
+}
+
+.ai-center {
+    align-items: center;
+}
+.content-start {
+    justify-content: start;
+}
+.content-center {
+    justify-content: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-auto {
+    overflow: auto;
+}
+
+
+
+/* background */
+.transparent {
+    background-color: transparent;
+}
+
+
+
+/* border radius */
+.radius-8 {
+    border-radius: 8px;
+}
+.radius-4 {
+    border-radius: 4px;
+}
+.radius-50{
+    border-radius: 50%;
+}
+.border-none {
+    border: none;
+}
+
+
+/* margin  padding */
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+
+
+.p-10 {
+    padding: 20px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-20 {
+    padding: 20px;
+}
+.p-10-15 {
+    padding: 10px 15px;
+}
+.p-15-25{
+    padding: 15px 25px;
+}
+
+
+/* text */
+.bold {
+    font-weight: bold;
+}
+.fw-600{
+    font-weight: 600;
+}
+.italic {
+    font-style: italic;
+}
+.f-15 {
+    font-size: 15px;
+}
+.f-14 {
+    font-size: 14px;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+.text-overflow-ellips {
+    text-overflow: ellipsis;
+}
+
+
+
+/* others */
+.select-none {
+    user-select: none;
+}
+.pointer {
+    cursor: pointer;
+}
+
+
+
+/* tags */
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+a {
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+svg {
+    width: 18px!important;
+    height: 18px!important;
+}
