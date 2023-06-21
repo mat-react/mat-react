@@ -53,12 +53,9 @@ const Sidebar = () => {
             sx={{
                 top: 0,
                 width: theme.palette.width?.sidebar,
-                position: "absolute",
-                left: 0,
-                bottom: 0,
-                zIndex: 99,
+                zIndex: 9999,
                 backgroundColor: theme.palette.background.paper,
-                boxShadow: `0 15px 21px 0 ${theme.palette.shadows?.default}`
+                boxShadow: `0 5px 5px 0 ${theme.palette.shadows?.default}`
             }}
         >
             <div className="p-15-25">   

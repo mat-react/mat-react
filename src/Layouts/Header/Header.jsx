@@ -41,6 +41,7 @@ const Header = () => {
         zIndex: 999, 
         backgroundColor: theme.palette.background.paper,
         height: theme.palette.height?.header,
+        left: theme.palette.width?.sidebar,
         boxShadow: `${theme.palette.width?.sidebar}px 0 21px ${theme.palette.shadows?.default}`
     })
 
@@ -64,7 +65,7 @@ const Header = () => {
 
 
     return (
-        <HeaderComponent className="absolute top-0 left-0 right-0">
+        <HeaderComponent className="absolute top-0 right-0">
             <Box 
                 className="w-100 flex ai-center relative h-100"
                 sx={{

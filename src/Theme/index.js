@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useMemo } from 'react';
+import { useSelector } from 'react-redux';
 
 // @mui
 import { CssBaseline } from '@mui/material';
@@ -15,7 +16,7 @@ import GlobalStyles from './globalStyles';
 
 function ThemeProvider({ children }) {
 
-  const darkMode = false
+  const darkMode = useSelector(state => state.app.darkMode)
   const mode = darkMode ? 'dark' : 'light'
 
 
