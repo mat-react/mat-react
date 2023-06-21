@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { Route, Routes } from "react-router-dom";
+
+import routes from '../Pages/routes';
 
 function AppContents(props) {
+
+
     return (
-        <div>
-            App contents
-        </div>
+        <>
+            <Suspense fallback={<div>Loading</div>}>
+                <Routes>
+                    {
+                        routes.map((i, key) => (
+                            <Route key={key} exact={i.exact}  path={i.path} element={<i.component />} />
+                        ))
+                    }
+                </Routes>
+            </Suspense>
+        </>
     );
 }
 
