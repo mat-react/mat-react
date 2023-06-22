@@ -9,7 +9,6 @@ import { Box, Button, Typography } from '@mui/material';
 import { useTheme } from '@emotion/react';
 
 
-
 const Sidebar = () => {
 
     const menusArray = [
@@ -54,12 +53,15 @@ const Sidebar = () => {
                 top: 0,
                 width: theme.palette.width?.sidebar,
                 zIndex: 9999,
-                backgroundColor: theme.palette.background.paper,
+                backgroundColor: theme.palette.background.sidebar,
                 boxShadow: `0 5px 5px 0 ${theme.palette.shadows?.default}`
             }}
         >
             <div className="p-15-25">   
 
+                <div className='LOGO'>
+                    
+                </div>
 
                 <div className='scrollable'>
                     <div>
@@ -75,7 +77,7 @@ const Sidebar = () => {
                                                 <Box 
                                                     className="radius-4 overflow-hidden text-overflow-ellips mb-15 p-15"
                                                     sx={{
-                                                        backgroundColor: theme.palette.background.default
+                                                        backgroundColor: theme.palette.primary[700]
                                                     }}
                                                 >
                                                     <Typography 
