@@ -72,7 +72,8 @@ export default function LanguagePopover() {
         sx={{
           width: 40,
           height: 40,
-          bgcolor: (theme) => theme.palette.background.default,
+          bgcolor: (theme) => theme.palette.light,
+          borderRadius: "0.475rem"
         }}
       >
         <img src={activeLang[0] ? activeLang[0].icon : LANGS[0].icon} alt={LANGS[0].label} />

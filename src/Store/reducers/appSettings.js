@@ -3,6 +3,7 @@ import { SIDEBAR_TOGGLE, DARK_MODE_CHANGER, LANGUAGE_CHANGER } from "../actions/
 const initialState = {
   sidebarMode: true,
   darkMode: false,
+  appMode: "l",
   lang: 'en'
 };
 
@@ -17,10 +18,12 @@ export const appSettingsReducer = (state = initialState, action) => {
 
 
     case DARK_MODE_CHANGER:
+      const mode = action.payload === "d" ? true : false
       localStorage.setItem("darkMode", action.payload)
       return {
         ...state,
-        darkMode: action.payload,
+        darkMode: mode,
+        appMode: action.payload
       };
 
 
