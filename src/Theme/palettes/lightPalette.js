@@ -81,10 +81,11 @@ const DARK = {
 
 
 const BACKGROUND = {
-    default: "#f5f8fa",
+    main: "#f5f8fa",
     active: "#131628",
 
     sidebar: "#1e1e2d",
+    header: "#ffffff",
 
     overlay: "rgba(0, 0, 0, 0.05)",
     blockUiOverlay: "rgba(0, 0, 0, 0.05)",
@@ -102,6 +103,10 @@ const TEXT = {
     warning: "#ffc700",
     danger: "#f1416c",
     dark: "#181C32",
+
+    gray: {
+        700: "#7E8299",
+    }
 }
 
 const BORDER = {

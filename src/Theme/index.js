@@ -12,6 +12,7 @@ import darkPalette from './palettes/darkPalette';
 import defaultPalette from './palettes/defaultPalette';
 import GlobalStyles from './globalStyles';
 
+import typography from './typography';
 
 
 function ThemeProvider({ children }) {
@@ -33,6 +34,8 @@ function ThemeProvider({ children }) {
           }),
         ...defaultPalette
       },
+
+      typography,
 
       breakpoints: {
         values: {

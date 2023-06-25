@@ -34,7 +34,7 @@ const PRIMARY = {
 const SECONDARY = {
     main: "#323248",
     active: "#474761",
-    light: "#1b1b29",
+    light: "#2A2A3C",
     inverse: "#92929F",
     rgb: "50, 50, 72"
 }
@@ -82,10 +82,11 @@ const DARK = {
 
 
 const BACKGROUND = {
-    default: "#151521",
+    main: "#151521",
     active: "#131628",
 
     sidebar: "#1e1e2d",
+    header: "#1e1e2d",
 
     overlay: "rgba(0, 0, 0, 0.05)",
     blockUiOverlay: "rgba(0, 0, 0, 0.05)",
@@ -103,6 +104,10 @@ const TEXT = {
     warning: "#ffc700",
     danger: "#f1416c",
     dark: "#FFFFFF",
+
+    gray: {
+        700: "#7E8299",
+    }
 }
 
 const BORDER = {

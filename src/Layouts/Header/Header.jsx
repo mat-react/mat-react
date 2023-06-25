@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 // mui components
 import styled from '@emotion/styled';
-import {IconButton, Box, useTheme, Typography, Button } from '@mui/material';
-import {LightMode, DarkMode, NotificationsActive, AccountCircle, Settings, Logout} from '@mui/icons-material/';
+import {IconButton, Box, useTheme, Typography } from '@mui/material';
+import {WbSunny, DarkMode, NotificationsActive, AccountCircle, Settings, Logout} from '@mui/icons-material/';
 
 
 // redux 
@@ -15,6 +15,7 @@ import { toggleDarkMode } from '../../Store/actions/appSettings';
 // components
 import ToggleSwitch from '../../Components/Forms/ToggleSwitch';
 import LanguagePopover from './LanguagePopover';
+import ModeToggler from './ModeToggler';
 
 
 const Header = () => { 
@@ -39,7 +40,7 @@ const Header = () => {
 
     const HeaderComponent = styled('div')({
         zIndex: 999, 
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.palette.background.header,
         height: theme.palette.height?.header,
         left: theme.palette.width?.sidebar,
         boxShadow: theme.palette.shadows?.default
@@ -48,9 +49,10 @@ const Header = () => {
     
 
     const menuItemButtonStyle = {
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.palette.light,
         width: 40,
         height: 40,
+        borderRadius: "10px"
     }
 
     const LinkItem = styled('div')({
@@ -63,12 +65,6 @@ const Header = () => {
     })
 
 
-    const MenuItem = styled(Button)({
-        paddingTop: "0.775rem",
-        paddingBottom: "0.775rem",
-        fontWeight: 500,
-        borderRadius: "0.475rem",
-    })
 
 
     return (
@@ -80,11 +76,6 @@ const Header = () => {
                     color: theme.palette.text.primary
                 }}
             >
-                
-                <Box className="w-100">
-                    <MenuItem sx={{background: theme.palette.grey[300], color: theme.palette.text.primary}}>Dashboard</MenuItem>
-                </Box>
-
                 <div className='flex ai-center content-end w-100'>
 
                     <Box 
@@ -99,21 +90,33 @@ const Header = () => {
                         </div>
 
                         <div>
-                            <IconButton 
+                            <ModeToggler />
+                            {/* <IconButton 
                                 className="flex"
-                                style={menuItemButtonStyle}
+                                sx={{ 
+                                    width: 40,
+                                    height: 40,
+                                    bgcolor: (theme) => theme.palette.light,
+                                    borderRadius: "0.475rem"
+                                 }}
                                 onClick={() => dispatch(toggleDarkMode(!darkMode))}
                             >
                                 {
-                                    darkMode ? <DarkMode /> : <LightMode />
+                                    darkMode ? <DarkMode /> : <WbSunny />
                                 }
-                            </IconButton>
+                            </IconButton> */}
                         </div>
 
                         <div>
                             <IconButton 
                                 className="flex"
-                                style={menuItemButtonStyle}
+                                sx={{ 
+                                    width: 40,
+                                    height: 40,
+                                    bgcolor: (theme) => theme.palette.light,
+                                    borderRadius: "0.475rem",
+                                    color:(theme) => theme.palette.text.primary
+                                 }}
                             >
                                 <NotificationsActive />
                             </IconButton>
@@ -124,7 +127,13 @@ const Header = () => {
                             <IconButton 
                                 onClick={dropdownMenuHandler} 
                                 className="flex"
-                                style={menuItemButtonStyle}
+                                sx={{ 
+                                    width: 40,
+                                    height: 40,
+                                    bgcolor: (theme) => theme.palette.light,
+                                    borderRadius: "0.475rem",
+                                    color:(theme) => theme.palette.text.primary
+                                }}
                             >
                                 <AccountCircle />
                             </IconButton>
