@@ -28,9 +28,9 @@ const LANGS = [
     icon: '/assets/flags/ic_flag_es.svg',
   },
   {
-    value: 'de',
-    label: 'German',
-    icon: '/assets/flags/ic_flag_de.svg',
+    value: 'ar',
+    label: 'Arabic',
+    icon: '/assets/flags/ic_flag_ar.svg',
   },
   {
     value: 'fr',
@@ -58,7 +58,9 @@ export default function LanguagePopover() {
 
 
   const handleClose = (ln) => {
-    dispatch(languageChagner(ln))
+    if(ln){
+      dispatch(languageChagner(ln))
+    }
     setOpen(null);
   };
 
@@ -69,12 +71,7 @@ export default function LanguagePopover() {
     <>
       <IconButton
         onClick={handleOpen}
-        sx={{
-          width: 40,
-          height: 40,
-          bgcolor: (theme) => theme.palette.light,
-          borderRadius: "0.475rem"
-        }}
+        className='w-[40px] h-[40px]'
       >
         <img src={activeLang[0] ? activeLang[0].icon : LANGS[0].icon} alt={LANGS[0].label} />
       </IconButton>
@@ -82,7 +79,7 @@ export default function LanguagePopover() {
       <Popover
         open={Boolean(open)}
         anchorEl={open}
-        onClose={handleClose}
+        onClose={() => handleClose(false)}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
         transformOrigin={{ vertical: 'top', horizontal: 'right' }}
         PaperProps={{
@@ -101,9 +98,8 @@ export default function LanguagePopover() {
       >
         <Stack spacing={0.75}>
           {LANGS.map((option) => (
-            <MenuItem key={option.value} selected={option.value === lang} onClick={() => handleClose(option.value)}>
+            <MenuItem className='text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark' key={option.value} selected={option.value === lang} onClick={() => handleClose(option.value)}>
               <Box component="img" alt={option.label} src={option.icon} sx={{ width: 28, mr: 2 }} />
-
               {option.label}
             </MenuItem>
           ))}

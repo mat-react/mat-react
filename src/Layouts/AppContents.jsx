@@ -1,18 +1,14 @@
 import React, { Suspense } from 'react';
 import { Route, Routes } from "react-router-dom";
-import styled from '@emotion/styled';
 
 import routes from '../Pages/routes';
 
 function AppContents(props) {
 
-    const PageBody = styled('div')(() => ({
-        padding: 20,
-    }));
 
 
     return (
-        <PageBody className='absolute right-0 bottom-0'>
+        <div className='p-6'>
             <Suspense fallback={<div>Loading</div>}>
                 <Routes>
                     {
@@ -22,7 +18,7 @@ function AppContents(props) {
                     }
                 </Routes>
             </Suspense>
-        </PageBody>
+        </div>
     );
 }
 

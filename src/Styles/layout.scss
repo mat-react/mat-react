@@ -138,6 +138,13 @@
         .main-content {
             margin-left: 260px;
         }
+
+        .vertical.toggle-sidebar .sidebar {
+            left: -260px;
+        }
+        .vertical.toggle-sidebar .main-content {
+            margin-left: 0;
+        }
     }
 
 }
@@ -167,9 +174,21 @@
         .main-content {
             margin-right: 260px;
         }
+        .vertical.toggle-sidebar .sidebar {
+            right: -260px;
+        }
+        .vertical.toggle-sidebar .main-content {
+            margin-right: 0;
+        }
     }
 }
 
+
+.vertical.toggle-sidebar {
+    .collapse-icon, .horizontal-logo {
+        display: flex;
+    }
+} 
 
 
 .sidebar .nav-item a div:first-child svg,.sidebar .nav-item button div:first-child svg {

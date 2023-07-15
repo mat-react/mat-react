@@ -13,11 +13,16 @@ function App() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const darkMode = localStorage.getItem("darkMode");
+        const appMode = localStorage.getItem("appMode");
         const lang = localStorage.getItem("lang");
-        dispatch(toggleDarkMode(darkMode));
+        dispatch(toggleDarkMode(appMode));
         dispatch(languageChagner(lang));
     }, [dispatch]);
+
+    // window.matchMedia('(prefers-color-scheme: dark)')
+    //     .addEventListener('change',({ matches }) => {
+    //     dispatch(toggleDarkMode("system"));
+    // })
 
 
     return (

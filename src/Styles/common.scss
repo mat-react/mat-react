@@ -10,3 +10,34 @@
     color: rgb(67 97 238/var(--tw-text-opacity))!important;
 }
 
+
+
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+body.dark {
+    --tw-bg-opacity: 1;
+    background-color: rgb(6 8 24/var(--tw-bg-opacity));
+}
+
+
+.bullet {
+    display: inline-block;
+    border-radius: 6px;
+    width: 8px;
+    height: 4px;
+    flex-shrink: 0;
+}
+
+// text 
+.text-muted {
+    color: var(--text-muted);
+}
