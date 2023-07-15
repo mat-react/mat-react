@@ -10,23 +10,23 @@ import Layout from "./Layouts/Layout";
 
 function App() {
 
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-      const darkMode = localStorage.getItem("darkMode");
-      const lang = localStorage.getItem("lang");
-      dispatch(toggleDarkMode(darkMode));
-      dispatch(languageChagner(lang));
-  }, [dispatch]);
+    useEffect(() => {
+        const darkMode = localStorage.getItem("darkMode");
+        const lang = localStorage.getItem("lang");
+        dispatch(toggleDarkMode(darkMode));
+        dispatch(languageChagner(lang));
+    }, [dispatch]);
 
 
-  return (
-    <div>
-      
-        <Layout />
-      
-    </div>
-  );
+    return (
+        <div className='relative overflow-x-hidden text-sm font-normal antialiased vertical full ltr'>
+        
+            <Layout />
+        
+        </div>
+    );
 }
 
 

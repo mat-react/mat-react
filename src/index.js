@@ -8,17 +8,14 @@ import { Provider } from "react-redux";
 import store from "./Store";
 
 import { BrowserRouter } from "react-router-dom"; // react router
-import ThemeProvider from './Theme'; // theme
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-      <ThemeProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </ThemeProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
   </Provider>
 );
 

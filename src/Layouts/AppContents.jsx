@@ -6,9 +6,7 @@ import routes from '../Pages/routes';
 
 function AppContents(props) {
 
-    const PageBody = styled('div')(({ theme }) => ({
-        top: theme.palette.height?.header,
-        left: theme.palette.width?.sidebar,
+    const PageBody = styled('div')(() => ({
         padding: 20,
     }));
 

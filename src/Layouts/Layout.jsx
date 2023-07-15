@@ -7,15 +7,17 @@ import AppContents from './AppContents';
 
 function Layout() {
     return (
-        <Box sx={{position: "relative", width: "100vw", height: "100vh"}}>
+        <div className='main-container min-h-screen text-black dark:text-white-dark navbar-sticky'>
         
             <Sidebar /> 
 
-            <Header />
+            <div className='main-content'>
+                <Header />
 
-            <AppContents />
+                <AppContents />
+            </div>
         
-        </Box>
+        </div>
     );
 }
 

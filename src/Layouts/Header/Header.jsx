@@ -1,241 +1,68 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-// mui components
-import styled from '@emotion/styled';
-import {IconButton, Box, useTheme, Typography } from '@mui/material';
-import {NotificationsActive, AccountCircle, Settings, Logout} from '@mui/icons-material/';
-
-
-// redux 
-import { useSelector, useDispatch } from 'react-redux';
-// import { toggleDarkMode } from '../../Store/actions/appSettings';
-
-
-// components
-import LanguagePopover from './LanguagePopover';
-import ModeToggler from './ModeToggler';
-
+import { IconButton } from '@mui/material';
+import { Menu } from '@mui/icons-material';
 
 const Header = () => { 
 
 
-    const [dropdownOpened, setDropdownOpened] = useState(false);
-
-
-    // dropdown handler function
-    const dropdownMenuHandler = () => {
-        setDropdownOpened(!dropdownOpened)
-    }
-
-
-    // dark mode enabling / getting by from redux store
-    const darkMode = useSelector(state => state.app.darkMode);
-    const dispatch = useDispatch();
-
-
-
-    const theme = useTheme()
-
-    const HeaderComponent = styled('div')({
-        zIndex: 999, 
-        backgroundColor: theme.palette.background.header,
-        height: theme.palette.height?.header,
-        left: theme.palette.width?.sidebar,
-        boxShadow: theme.palette.shadows?.default
-    })
-
-    
-
-    const menuItemButtonStyle = {
-        backgroundColor: theme.palette.light,
-        width: 40,
-        height: 40,
-        borderRadius: "10px"
-    }
-
-    const LinkItem = styled('div')({
-        gridTemplateColumns: "25px auto",
-        padding: "15px 20px",
-        color: theme.palette.text.primary,
-        '&:hover': {
-          background: theme.palette.background.default
-        }
-    })
 
 
 
 
     return (
-        <HeaderComponent className="absolute top-0 right-0">
-            <Box 
-                className="w-100 flex ai-center space-between relative h-100"
-                sx={{
-                    padding: '15px 25px',
-                    color: theme.palette.text.primary
-                }}
-            >
-                <div className='flex ai-center content-end w-100'>
 
-                    <Box 
-                        className="w-auto grid gc-gap-15"
-                        sx={{
-                            gridTemplateColumns: 'auto auto auto auto',
-                        }}
-                    >
+        <header className="">
+            <div className="shadow-sm">
+                <div className="relative flex w-full items-center bg-white px-5 py-2.5 dark:bg-[#0e1726]">
+                    <div className="horizontal-logo flex items-center justify-between ltr:mr-2 rtl:ml-2 lg:hidden">
 
-                        <div>
-                            <LanguagePopover />
-                        </div>
+                        <NavLink to="/" className="main-logo flex shrink-0 items-center">
+                            <span className="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">MAT-REACT</span>
+                        </NavLink>
 
-                        <div>
-                            <ModeToggler />
-                        </div>
-
-                        <div>
-                            <IconButton 
-                                className="flex"
-                                sx={{ 
-                                    width: 40,
-                                    height: 40,
-                                    bgcolor: (theme) => theme.palette.light,
-                                    borderRadius: "0.475rem",
-                                    color:(theme) => theme.palette.text.primary
-                                 }}
-                            >
-                                <NotificationsActive />
-                            </IconButton>
-                        </div>
+                        <IconButton>
+                            <Menu />
+                        </IconButton>
+                    </div>
+                    <div className="hidden ltr:mr-2 rtl:ml-2 sm:block">
+                        <ul className="flex items-center space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6]">
+                            <li>
+                                <a href="apps-calendar.html" className="block rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary dark:bg-dark/40 dark:hover:bg-dark/60">
+                                    L
+                                </a>
+                            </li>
+                            <li>
+                                <a href="apps-todolist.html" className="block rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary dark:bg-dark/40 dark:hover:bg-dark/60">
+                                    L
+                                </a>
+                            </li>
+                            <li>
+                                <a href="apps-chat.html" className="block rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary dark:bg-dark/40 dark:hover:bg-dark/60">
+                                    L
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="flex items-center space-x-1.5 ltr:ml-auto rtl:mr-auto rtl:space-x-reverse dark:text-[#d0d2d6] sm:flex-1 ltr:sm:ml-0 sm:rtl:mr-0 lg:space-x-2">
                         
-
                         <div>
-                            <IconButton 
-                                onClick={dropdownMenuHandler} 
-                                className="flex"
-                                sx={{ 
-                                    width: 40,
-                                    height: 40,
-                                    bgcolor: (theme) => theme.palette.light,
-                                    borderRadius: "0.475rem",
-                                    color:(theme) => theme.palette.text.primary
-                                }}
-                            >
-                                <AccountCircle />
-                            </IconButton>
+                            <a href='/' className="flex items-center rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary dark:bg-dark/40 dark:hover:bg-dark/60">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 9C3 6.17157 3 4.75736 3.87868 3.87868C4.75736 3 6.17157 3 9 3H15C17.8284 3 19.2426 3 20.1213 3.87868C21 4.75736 21 6.17157 21 9V14C21 15.8856 21 16.8284 20.4142 17.4142C19.8284 18 18.8856 18 17 18H7C5.11438 18 4.17157 18 3.58579 17.4142C3 16.8284 3 15.8856 3 14V9Z" stroke="currentColor" strokeWidth="1.5"></path>
+                                    <path opacity="0.5" d="M22 21H2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
+                                    <path opacity="0.5" d="M15 15H9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
+                                </svg>
+                            </a>
                         </div>
 
-                    </Box>
-
+                    </div>
                 </div>
 
+            </div>
+        </header>
 
-                
-            </Box>
-
-
-            {
-                dropdownOpened ?
-                <>
-                    <div onClick={dropdownMenuHandler} className="fixed top-0 left-0 right-0 top-0 bottom-0 transparent"></div>
-                    
-                    <Box 
-                        sx={{
-                            backgroundColor: theme.palette.background.paper,
-                            right: 20,
-                            top: 60,
-                            widht: 330,
-                            minHeight: 200,
-                            boxShadow: theme.shadows[5],
-
-                            [theme.breakpoints.down('sms')]: {
-                                width: "auto!important",
-                                left: 20
-                            },
-                        }}
-                        className="absolute radius-8 overflow-hidden"
-                    >
-                        <div className="block height-auto p-15">
-
-
-                            {/* welcome message */}
-                            <Box 
-                                className="mb-20 radius-8 mt-10 relative overflow-hidden"
-                                sx = {{
-                                    backgroundColor: theme.palette.background.default,
-                                    color: theme.palette.text.primary,
-                                    padding: "20px 20px 30px"
-                                }}
-                            >
-                                
-                                <span className="GraphicsSm One"></span>
-                                <span className="GraphicsSm Two"></span>
-
-                                <div>
-                                    <Typography variant="h4" className="bold mb-10">
-                                        Good Mornig!
-                                    </Typography>
-                                    <div className="fw-600">
-                                        Start your jorney. Have a great day!
-                                    </div>
-                                </div>
-
-                            </Box>
-                            {/* welcome message */}
-
-
-
-                            {/* switches */}
-                            <Box 
-                                className="p-20 mb-15 radius-4 bold grid select-none gr-gap-20"
-                                sx={{
-                                    backgroundColor: theme.palette.primary.dark,
-                                    color: theme.palette.text.primary
-                                }}
-                            >
-                                <div className="flex ai-center space-between"> 
-                                    <div> Dark Mode </div>
-                                </div>
-                                <div className="flex ai-center space-between"> 
-                                    <div> Allow Notifications </div>
-                                </div>
-                            </Box>
-                            {/* switches */}
-
-
-                            
-                            {/* links */}
-                            <div className="mb-15">
-
-                                <LinkItem className="grid ai-center radius-4 bold pointer">
-                                    <div className="w-20 h-20">
-                                        <Settings className="w-20 h-20" />
-                                    </div>
-                                    <div>
-                                        Account Settings
-                                    </div>
-                                </LinkItem>
-
-                                <LinkItem className="grid ai-center radius-4 bold pointer">
-                                    <div className="w-20 h-20">
-                                        <Logout className="w-20 h-20" />
-                                    </div>
-                                    <div>
-                                        Logout
-                                    </div>
-                                </LinkItem>
-
-                            </div>
-                            {/* links */}
-
-
-                        </div>
-                    </Box>
-                </>
-                :
-                null
-            }
-
-
-        </HeaderComponent>
     );
 }
 
