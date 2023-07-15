@@ -1,3 +1,16 @@
 body {
     --text-muted: #99A1B7
+
 }
+@layer base {
+    body {
+        --color-primary: rgb(0, 167, 111, --tw-opacity);
+        // --color-primary: rgb(118, 53, 220, --tw-opacity);
+        // --color-secondary: blue;
+    }
+
+    body.theme-purple { 
+        --color-primary: rgb(91 33 182);
+    }
+}
+

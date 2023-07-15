@@ -9,6 +9,9 @@ import { toggleDarkMode } from '../../Store/actions/appSettings';
 
 import LanguagePopover from './LanguagePopover';
 
+
+import { sidebarToggler } from '../../Utils/appFuntions';
+
 const Header = () => { 
 
 
@@ -21,6 +24,8 @@ const Header = () => {
         dispatch(toggleDarkMode(mode))
     }
 
+    const theme = ""
+
     return (
 
         <header className="">
@@ -32,7 +37,7 @@ const Header = () => {
                             <span className="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">MAT-REACT</span>
                         </NavLink>
 
-                        <IconButton className="collapse-icon flex flex-none rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary ltr:ml-2 rtl:mr-2 dark:bg-dark/40 dark:text-[#d0d2d6] dark:hover:bg-dark/60 dark:hover:text-primary lg:hidden">
+                        <IconButton onClick={() => sidebarToggler()} className="collapse-icon flex flex-none rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary ltr:ml-2 rtl:mr-2 dark:bg-dark/40 dark:text-[#d0d2d6] dark:hover:bg-dark/60 dark:hover:text-primary lg:hidden">
                             <Menu />
                         </IconButton>
                     </div>
@@ -51,14 +56,14 @@ const Header = () => {
                         <div><LanguagePopover /></div>
 
                         <div>
-                            <IconButton className="flex items-center rounded-full ">
+                            <IconButton className={`flex items-center rounded-full text-[#637381!important] dark:text-[#919EAB!important] hover:text-primary`}>
                                 <Comment />
                                 <span className="absolute top-0 flex h-3 w-3 ltr:right-0 rtl:left-0">
                                     <span className="absolute top-[-2px] inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75 ltr:-left-[3px] rtl:-right-[3px]"></span>
                                     <span className="relative top-[1px] inline-flex h-[6px] w-[6px] rounded-full bg-success"></span>
                                 </span>
                             </IconButton>
-                        </div>
+                        </div> 
 
                         <div>
                             <IconButton className="flex items-center rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary dark:bg-dark/40 dark:hover:bg-dark/60">
@@ -67,7 +72,7 @@ const Header = () => {
                         </div>
 
                         <div>
-                            <IconButton className="flex items-center rounded-full ">
+                            <IconButton className="flex items-center rounded-full hover:text-primary">
                                 <Settings />
                             </IconButton>
                         </div>

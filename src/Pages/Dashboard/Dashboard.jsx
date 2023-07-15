@@ -7,7 +7,7 @@ function Dashboard(props) {
         <div>
 
             <div>
-                <h1 className="text-dark font-bold text-xl">
+                <h1 className="text-dark dark:text-white font-bold text-xl">
                     Dashboard
                 </h1>
                 <BreadCumb links={[{title: "Dashboard", to: "/"}, {title: "Main"}]} current={"Main"} />
