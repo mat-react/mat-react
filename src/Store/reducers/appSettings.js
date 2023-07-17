@@ -2,15 +2,20 @@ import { APP_MODE_CHANGER, LANGUAGE_CHANGER } from "../actions/types";
 
 const initialState = {
     appMode: "light",
-    lang: 'en'
+    lang: 'en',
+    dir: 'ltr',
 };
 
 export const appSettingsReducer = (state = initialState, action) => {
   switch (action.type) {
 
     case APP_MODE_CHANGER:
-        localStorage.setItem("appMode", action.payload)
-        var mode = action.payload
+        var mode = "light"
+        if(action.payload && action.payload !== ""){
+          mode = action.payload
+        }
+        localStorage.setItem("appMode", mode)
+        
         if(mode === "system") {
           if(window.matchMedia("(prefers-color-scheme: dark)").matches){
             mode = "dark"
@@ -29,11 +34,15 @@ export const appSettingsReducer = (state = initialState, action) => {
 
 
     case LANGUAGE_CHANGER:
-        localStorage.setItem("lang", action.payload)
-        document.documentElement.lang = action.payload;
+        const {ln, dir} = action.payload
+        localStorage.setItem("lang", ln)
+        localStorage.setItem("dir", dir)
+        document.documentElement.lang = ln;
+        document.documentElement.dir = dir;
         return {
             ...state,
-            lang: action.payload,
+            lang: ln,
+            dir: dir,
         };
 
 

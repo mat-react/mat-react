@@ -14,27 +14,32 @@ import { languageChagner } from '../../Store/actions/appSettings';
 const LANGS = [
   {
     value: 'en',
+    dir: "ltr",
     label: 'English',
     icon: '/assets/flags/ic_flag_en.svg',
   },
   {
     value: 'bn',
     label: 'Bangla',
+    dir: "ltr",
     icon: '/assets/flags/ic_flag_bn.svg',
   },
   {
     value: 'es',
     label: 'Espanol',
+    dir: "ltr",
     icon: '/assets/flags/ic_flag_es.svg',
   },
   {
     value: 'ar',
     label: 'Arabic',
+    dir: "rtl",
     icon: '/assets/flags/ic_flag_ar.svg',
   },
   {
     value: 'fr',
     label: 'French',
+    dir: "ltr",
     icon: '/assets/flags/ic_flag_fr.svg',
   },
 ];
@@ -57,13 +62,15 @@ export default function LanguagePopover() {
                 })
 
 
-  const handleClose = (ln) => {
+  const handleClose = (ln, dir) => {
     if(ln){
-      dispatch(languageChagner(ln))
+      dispatch(languageChagner({ln, dir}))
     }
     setOpen(null);
   };
 
+
+  console.log(lang);
   
 
 
@@ -98,7 +105,7 @@ export default function LanguagePopover() {
       >
         <Stack spacing={0.75}>
           {LANGS.map((option) => (
-            <MenuItem className='text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark' key={option.value} selected={option.value === lang} onClick={() => handleClose(option.value)}>
+            <MenuItem className='text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark' key={option.value} selected={option.value === lang} onClick={() => handleClose(option.value, option.dir)}>
               <Box component="img" alt={option.label} src={option.icon} sx={{ width: 28, mr: 2 }} />
               {option.label}
             </MenuItem>

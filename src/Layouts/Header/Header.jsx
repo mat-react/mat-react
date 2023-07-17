@@ -24,13 +24,12 @@ const Header = () => {
         dispatch(toggleDarkMode(mode))
     }
 
-    const theme = ""
 
     return (
 
         <header className="">
             <div className="shadow-sm">
-                <div className="relative flex w-full items-center bg-white px-5 py-2.5 dark:bg-[#0e1726]">
+                <div className="relative flex w-full items-center bg-white px-5 py-2.5 dark:bg-muted-800">
                     <div className="horizontal-logo flex items-center justify-between ltr:mr-2 rtl:ml-2 lg:hidden">
 
                         <NavLink to="/" className="main-logo flex shrink-0 items-center">
@@ -46,9 +45,9 @@ const Header = () => {
                     <div className="flex items-center space-x-1.5 ltr:ml-auto rtl:mr-auto rtl:space-x-reverse dark:text-[#d0d2d6] lg:space-x-2">
                         
                         <div>
-                            <IconButton onClick={() => appModeChanger()} className="flex items-center rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary dark:bg-dark/40 dark:hover:bg-dark/60">
+                            <IconButton onClick={() => appModeChanger()} className="flex items-center rounded-full !text-muted-400 hover:!text-primary">
                                 {
-                                    appMode === "light" ? <LightMode /> : appMode === <DarkMode /> ? "D" : <LaptopWindows />
+                                    appMode === "system" ? <LaptopWindows /> : appMode === "dark" ? <DarkMode /> : <LightMode />
                                 }
                             </IconButton>
                         </div>
@@ -56,7 +55,7 @@ const Header = () => {
                         <div><LanguagePopover /></div>
 
                         <div>
-                            <IconButton className={`flex items-center rounded-full text-[#637381!important] dark:text-[#919EAB!important] hover:text-primary`}>
+                            <IconButton className={`flex items-center rounded-full !text-muted-400 hover:!text-primary`}>
                                 <Comment />
                                 <span className="absolute top-0 flex h-3 w-3 ltr:right-0 rtl:left-0">
                                     <span className="absolute top-[-2px] inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75 ltr:-left-[3px] rtl:-right-[3px]"></span>
@@ -66,13 +65,13 @@ const Header = () => {
                         </div> 
 
                         <div>
-                            <IconButton className="flex items-center rounded-full bg-white-light/40 p-2 hover:bg-white-light/90 hover:text-primary dark:bg-dark/40 dark:hover:bg-dark/60">
+                            <IconButton className="flex items-center rounded-full !text-muted-400 hover:!text-primary">
                                 <Apps />
                             </IconButton>
                         </div>
 
                         <div>
-                            <IconButton className="flex items-center rounded-full hover:text-primary">
+                            <IconButton className="flex items-center rounded-full !text-muted-400 hover:!text-primary">
                                 <Settings />
                             </IconButton>
                         </div>

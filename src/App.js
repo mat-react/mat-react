@@ -15,8 +15,9 @@ function App() {
     useEffect(() => {
         const appMode = localStorage.getItem("appMode");
         const lang = localStorage.getItem("lang");
+        const direction = localStorage.getItem("dir");
         dispatch(toggleDarkMode(appMode));
-        dispatch(languageChagner(lang));
+        dispatch(languageChagner({ln: lang, dir: direction}));
     }, [dispatch]);
 
     // window.matchMedia('(prefers-color-scheme: dark)')

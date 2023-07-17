@@ -16,7 +16,7 @@ const SingleLevel = ({item}) => {
             <NavLink className="group" to={item.to}>
                 <div className="flex items-center">
                     {item.icon ? <item.icon className="shrink-0 group-hover:!text-primary" /> : null }
-                    <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">
+                    <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-muted-400 dark:group-hover:text-white-dark">
                         {item.title}
                     </span>
                 </div>
@@ -47,7 +47,7 @@ const MultiLevel = ({ item }) => {
         <button type="button" className="nav-link group" onClick={handleClick}>
             <div className="flex items-center">
                 <item.icon className="shrink-0 group-hover:!text-primary" />
-                <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">{item.title}</span>
+                <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-muted-400 dark:group-hover:text-white-dark">{item.title}</span>
             </div>
             <div className={["rtl:rotate-180 transition duration-300", open ? "!rotate-90" : ""].join(" ") } >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ const MultiLevel = ({ item }) => {
         </button>
       </li>
       <Collapse in={open} timeout="auto" unmountOnExit>
-        <List  component="ul" className="sub-menu text-gray-500" disablePadding>
+        <List  component="ul" className="sub-menu text-gray-500 dark:text-muted-400" disablePadding>
           {children.map((child, key) => (
             <Single key={key} item={child} />
           ))}
