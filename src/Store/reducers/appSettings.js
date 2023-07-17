@@ -1,56 +1,21 @@
-<<<<<<< HEAD
-import { SIDEBAR_TOGGLE, DARK_MODE_CHANGER, LANGUAGE_CHANGER } from "../actions/types";
-
-const initialState = {
-  sidebarMode: true,
-  darkMode: false,
-  appMode: "l",
-  lang: 'en'
-=======
 import { APP_MODE_CHANGER, LANGUAGE_CHANGER } from "../actions/types";
 
 const initialState = {
     appMode: "light",
-    lang: 'en'
->>>>>>> new_theme
+    lang: 'en',
+    dir: 'ltr',
 };
 
 export const appSettingsReducer = (state = initialState, action) => {
   switch (action.type) {
 
-<<<<<<< HEAD
-    case SIDEBAR_TOGGLE:
-      return {
-        ...state,
-        sidebarMode: action.payload,
-      };
-
-
-    case DARK_MODE_CHANGER:
-      const mode = action.payload === "d" ? true : false
-      localStorage.setItem("darkMode", action.payload)
-      return {
-        ...state,
-        darkMode: mode,
-        appMode: action.payload
-      };
-
-
-    case LANGUAGE_CHANGER:
-      localStorage.setItem("lang", action.payload)
-      document.documentElement.lang = action.payload;
-      return {
-        ...state,
-        lang: action.payload,
-      };
-
-
-    default:
-      return state;
-=======
     case APP_MODE_CHANGER:
-        localStorage.setItem("appMode", action.payload)
-        var mode = action.payload
+        var mode = "light"
+        if(action.payload && action.payload !== ""){
+          mode = action.payload
+        }
+        localStorage.setItem("appMode", mode)
+        
         if(mode === "system") {
           if(window.matchMedia("(prefers-color-scheme: dark)").matches){
             mode = "dark"
@@ -69,16 +34,19 @@ export const appSettingsReducer = (state = initialState, action) => {
 
 
     case LANGUAGE_CHANGER:
-        localStorage.setItem("lang", action.payload)
-        document.documentElement.lang = action.payload;
+        const {ln, dir} = action.payload
+        localStorage.setItem("lang", ln)
+        localStorage.setItem("dir", dir)
+        document.documentElement.lang = ln;
+        document.documentElement.dir = dir;
         return {
             ...state,
-            lang: action.payload,
+            lang: ln,
+            dir: dir,
         };
 
 
     default:
         return state;
->>>>>>> new_theme
   }
 };

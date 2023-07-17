@@ -26,8 +26,20 @@ export const menus = [
     items: [
       {
         title: "Inbox",
+        icon: Leaderboard,
+        items: [
+          {
+            title: "Sent",
+          },
+          {
+            title: "Sent",
+          },
+          {
+            title: "Sent",
+          }
+        ]
       },
-      {
+      { 
         title: "Sent",
       }
     ]

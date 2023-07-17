@@ -160,8 +160,8 @@ const Sidebar = () => {
 
     return(
 
-        <nav className="sidebar fixed top-0 bottom-0 z-50 h-full min-h-screen w-[260px] shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] transition-all duration-300">
-            <div className="h-full bg-white dark:bg-[#0e1726]">
+        <nav className="sidebar fixed top-0 bottom-0 z-50 dark:ltr:border-r dark:rtl:border-l border-muted-200 dark:border-muted-700 h-full min-h-screen w-[260px] dark:shadow-none shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] transition-all duration-300">
+            <div className="h-full bg-white dark:bg-muted-800">
                 
                 <div className="flex items-center justify-between px-4 py-3">
                     <NavLink to={"/"} className="main-logo flex shrink-0 items-center">
@@ -169,7 +169,7 @@ const Sidebar = () => {
                         <span className="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">MAT-REACT</span>
                     </NavLink>
                     <IconButton onClick={() => sidebarToggler()}>
-                        <svg className="m-auto h-5 w-5" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="m-auto h-5 w-5 text-muted-400" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13 19L7 12L13 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                             <path opacity="0.5" d="M16.9998 19L10.9998 12L16.9998 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                         </svg>
