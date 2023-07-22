@@ -30,7 +30,7 @@ function Travel(props) {
                                 <h3 className='-translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M3 22h18v2H3zm9-10c-12 0-9 9-9 9h18s3-9-9-9Z"></path>
                                     <path fill="currentColor" d="m3 0l1 13c1.22-1.6 3.46-2.51 8-2.51s6.81.93 8 2.53L21 0Zm4 3h10v2H7Zm11 6H6V7h12Z"></path>
                                 </svg>
@@ -39,7 +39,7 @@ function Travel(props) {
                                 <h3 className='translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-500 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ function Travel(props) {
                                 <h3 className='-translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M3 22h18v2H3zm9-10c-12 0-9 9-9 9h18s3-9-9-9Z"></path>
                                     <path fill="currentColor" d="m3 0l1 13c1.22-1.6 3.46-2.51 8-2.51s6.81.93 8 2.53L21 0Zm4 3h10v2H7Zm11 6H6V7h12Z"></path>
                                 </svg>
@@ -61,7 +61,7 @@ function Travel(props) {
                                 <h3 className='translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-500 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ function Travel(props) {
                                 <h3 className='-translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M3 22h18v2H3zm9-10c-12 0-9 9-9 9h18s3-9-9-9Z"></path>
                                     <path fill="currentColor" d="m3 0l1 13c1.22-1.6 3.46-2.51 8-2.51s6.81.93 8 2.53L21 0Zm4 3h10v2H7Zm11 6H6V7h12Z"></path>
                                 </svg>
@@ -84,7 +84,7 @@ function Travel(props) {
                                 <h3 className='translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-500 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ function Travel(props) {
                                 <h3 className='-translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M3 22h18v2H3zm9-10c-12 0-9 9-9 9h18s3-9-9-9Z"></path>
                                     <path fill="currentColor" d="m3 0l1 13c1.22-1.6 3.46-2.51 8-2.51s6.81.93 8 2.53L21 0Zm4 3h10v2H7Zm11 6H6V7h12Z"></path>
                                 </svg>
@@ -108,7 +108,7 @@ function Travel(props) {
                                 <h3 className='translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-500 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ function Travel(props) {
                                 <h3 className='-translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M3 22h18v2H3zm9-10c-12 0-9 9-9 9h18s3-9-9-9Z"></path>
                                     <path fill="currentColor" d="m3 0l1 13c1.22-1.6 3.46-2.51 8-2.51s6.81.93 8 2.53L21 0Zm4 3h10v2H7Zm11 6H6V7h12Z"></path>
                                 </svg>
@@ -131,7 +131,7 @@ function Travel(props) {
                                 <h3 className='translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-500 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ function Travel(props) {
                                 <h3 className='-translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M3 22h18v2H3zm9-10c-12 0-9 9-9 9h18s3-9-9-9Z"></path>
                                     <path fill="currentColor" d="m3 0l1 13c1.22-1.6 3.46-2.51 8-2.51s6.81.93 8 2.53L21 0Zm4 3h10v2H7Zm11 6H6V7h12Z"></path>
                                 </svg>
@@ -155,7 +155,7 @@ function Travel(props) {
                                 <h3 className='translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-500 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
                             </div>
                         </div>
                     </div>
@@ -169,7 +169,7 @@ function Travel(props) {
                                 <h3 className='-translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M3 22h18v2H3zm9-10c-12 0-9 9-9 9h18s3-9-9-9Z"></path>
                                     <path fill="currentColor" d="m3 0l1 13c1.22-1.6 3.46-2.51 8-2.51s6.81.93 8 2.53L21 0Zm4 3h10v2H7Zm11 6H6V7h12Z"></path>
                                 </svg>
@@ -178,7 +178,7 @@ function Travel(props) {
                                 <h3 className='translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-500 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
                             </div>
                         </div>
                     </div>

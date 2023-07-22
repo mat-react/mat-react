@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         // primary: 'rgba(118, 53, 220, <alpha-value>)',
-        primary: 'rgba(0, 167, 111, <alpha-value>)',
-        "primary-400": "rgb(0 214 142 / <alpha-value>)",
+        primary: 'rgb(var(--color-primary-500)/ <alpha-value>)',
+        "primary-400": "rgb(var(--color-primary-400) / <alpha-value>)",
          
         secondary: "rgb(67 97 238/1)",
         success: "#00ab5580",
@@ -20,6 +20,7 @@ module.exports = {
         "muted-300": "rgb(var(--color-muted-300)/ <alpha-value>)",
         "muted-400": "rgb(var(--color-muted-400)/ <alpha-value>)",
         "muted-500": "rgb(var(--color-muted-500)/ <alpha-value>)",
+        "muted-550": "rgb(var(--color-muted-550)/ <alpha-value>)",
         "muted-600": "rgb(var(--color-muted-600)/ <alpha-value>)",
         "muted-700": "rgb(var(--color-muted-700)/ <alpha-value>)",
         "muted-800": "rgb(var(--color-muted-800)/ <alpha-value>)",

@@ -30,7 +30,7 @@ function Dashboard(props) {
                             <h3 className='font-heading text-base font-semibold leading-tight text-muted-800 dark:text-white'>
                                 <span>Trending Languages</span>
                             </h3>
-                            <button className='bg-muted-100 hover:bg-muted-200 dark:bg-muted-700 dark:hover:bg-muted-900 text-primary bg:text-primary-400 rounded-lg px-4 py-2 font-sans text-sm font-medium underline-offset-4 transition-colors duration-300'>
+                            <button className='bg-muted-100 hover:bg-muted-200 dark:bg-muted-700 dark:hover:bg-muted-600 text-primary bg:text-primary-400 rounded-lg px-4 py-2 font-sans text-sm font-medium underline-offset-4 transition-colors duration-300'>
                                 View all
                             </button>
                         </div>
@@ -162,7 +162,7 @@ function Dashboard(props) {
                     <div className="grid grid-cols-2 col-span-2 gap-4">
                         <div className='border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl flex items-center gap-2 p-3'>
                             <div className='relative inline-flex shrink-0 items-center justify-center h-10 w-10 rounded-full bg-info-100 text-info-500 dark:bg-info-500/20 dark:text-info-400 dark:border-info-500 dark:border-2'>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 256 256">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 256 256">
                                     <g fill="currentColor">
                                         <path d="M216 136a88 88 0 1 1-88-88a88 88 0 0 1 88 88Z" opacity=".2"></path>
                                         <path d="M128 40a96 96 0 1 0 96 96a96.11 96.11 0 0 0-96-96Zm0 176a80 80 0 1 1 80-80a80.09 80.09 0 0 1-80 80Zm45.66-125.66a8 8 0 0 1 0 11.32l-40 40a8 8 0 0 1-11.32-11.32l40-40a8 8 0 0 1 11.32 0ZM96 16a8 8 0 0 1 8-8h48a8 8 0 0 1 0 16h-48a8 8 0 0 1-8-8Z"></path>
@@ -178,7 +178,7 @@ function Dashboard(props) {
                         </div>
                         <div className='border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl flex items-center gap-2 p-3'>
                             <div className='relative inline-flex shrink-0 items-center justify-center h-10 w-10 rounded-full bg-purple-100 text-purple-500 dark:bg-purple-500/20 dark:text-purple-400 dark:border-purple-500 dark:border-2'>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 256 256"><g fill="currentColor"><path d="M160 128a32 32 0 1 1-32-32a32 32 0 0 1 32 32Z" opacity=".2"></path><path d="M128 88a40 40 0 1 0 40 40a40 40 0 0 0-40-40Zm0 64a24 24 0 1 1 24-24a24 24 0 0 1-24 24Zm73.71 7.14a80 80 0 0 1-14.08 22.2a8 8 0 0 1-11.92-10.67a63.95 63.95 0 0 0 0-85.33a8 8 0 1 1 11.92-10.67a80.08 80.08 0 0 1 14.08 84.47ZM69 103.09a64 64 0 0 0 11.26 67.58a8 8 0 0 1-11.92 10.67a79.93 79.93 0 0 1 0-106.67a8 8 0 1 1 11.95 10.67A63.77 63.77 0 0 0 69 103.09ZM248 128a119.58 119.58 0 0 1-34.29 84a8 8 0 1 1-11.42-11.2a103.9 103.9 0 0 0 0-145.56A8 8 0 1 1 213.71 44A119.58 119.58 0 0 1 248 128ZM53.71 200.78A8 8 0 1 1 42.29 212a119.87 119.87 0 0 1 0-168a8 8 0 1 1 11.42 11.2a103.9 103.9 0 0 0 0 145.56Z"></path></g></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 256 256"><g fill="currentColor"><path d="M160 128a32 32 0 1 1-32-32a32 32 0 0 1 32 32Z" opacity=".2"></path><path d="M128 88a40 40 0 1 0 40 40a40 40 0 0 0-40-40Zm0 64a24 24 0 1 1 24-24a24 24 0 0 1-24 24Zm73.71 7.14a80 80 0 0 1-14.08 22.2a8 8 0 0 1-11.92-10.67a63.95 63.95 0 0 0 0-85.33a8 8 0 1 1 11.92-10.67a80.08 80.08 0 0 1 14.08 84.47ZM69 103.09a64 64 0 0 0 11.26 67.58a8 8 0 0 1-11.92 10.67a79.93 79.93 0 0 1 0-106.67a8 8 0 1 1 11.95 10.67A63.77 63.77 0 0 0 69 103.09ZM248 128a119.58 119.58 0 0 1-34.29 84a8 8 0 1 1-11.42-11.2a103.9 103.9 0 0 0 0-145.56A8 8 0 1 1 213.71 44A119.58 119.58 0 0 1 248 128ZM53.71 200.78A8 8 0 1 1 42.29 212a119.87 119.87 0 0 1 0-168a8 8 0 1 1 11.42 11.2a103.9 103.9 0 0 0 0 145.56Z"></path></g></svg>
                             </div>
                             <div>
                                 <h2 className="font-heading text-sm font-semibold leading-tight text-muted-800 dark:text-white">62K</h2>
@@ -189,7 +189,7 @@ function Dashboard(props) {
                         </div>
                         <div className='border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl flex items-center gap-2 p-3'>
                             <div className='relative inline-flex shrink-0 items-center justify-center h-10 w-10 rounded-full bg-lime-100 text-lime-500 dark:border-2 dark:border-lime-500 dark:bg-lime-500/20 dark:text-lime-400'>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 256 256"><g fill="currentColor"><path d="M168 100a60 60 0 1 1-60-60a60 60 0 0 1 60 60Z" opacity=".2"></path><path d="M256 136a8 8 0 0 1-8 8h-16v16a8 8 0 0 1-16 0v-16h-16a8 8 0 0 1 0-16h16v-16a8 8 0 0 1 16 0v16h16a8 8 0 0 1 8 8Zm-57.87 58.85a8 8 0 0 1-12.26 10.3C165.75 181.19 138.09 168 108 168s-57.75 13.19-77.87 37.15a8 8 0 0 1-12.25-10.3c14.94-17.78 33.52-30.41 54.17-37.17a68 68 0 1 1 71.9 0c20.65 6.76 39.23 19.39 54.18 37.17ZM108 152a52 52 0 1 0-52-52a52.06 52.06 0 0 0 52 52Z"></path></g></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 256 256"><g fill="currentColor"><path d="M168 100a60 60 0 1 1-60-60a60 60 0 0 1 60 60Z" opacity=".2"></path><path d="M256 136a8 8 0 0 1-8 8h-16v16a8 8 0 0 1-16 0v-16h-16a8 8 0 0 1 0-16h16v-16a8 8 0 0 1 16 0v16h16a8 8 0 0 1 8 8Zm-57.87 58.85a8 8 0 0 1-12.26 10.3C165.75 181.19 138.09 168 108 168s-57.75 13.19-77.87 37.15a8 8 0 0 1-12.25-10.3c14.94-17.78 33.52-30.41 54.17-37.17a68 68 0 1 1 71.9 0c20.65 6.76 39.23 19.39 54.18 37.17ZM108 152a52 52 0 1 0-52-52a52.06 52.06 0 0 0 52 52Z"></path></g></svg>
                             </div>
                             <div>
                                 <h2 className="font-heading text-sm font-semibold leading-tight text-muted-800 dark:text-white">62K</h2>
@@ -200,7 +200,7 @@ function Dashboard(props) {
                         </div>
                         <div className='border-muted-200 dark:border-muted-700 dark:bg-muted-800 relative w-full border bg-white transition-all duration-300 rounded-xl flex items-center gap-2 p-3'>
                             <div className='relative inline-flex shrink-0 items-center justify-center h-10 w-10 rounded-full bg-amber-100 text-amber-500 dark:border-2 dark:border-amber-500 dark:bg-amber-500/20 dark:text-amber-400'>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 256 256"><g fill="currentColor"><path d="M200 40v184H56V40a8 8 0 0 1 8-8h128a8 8 0 0 1 8 8Z" opacity=".2"></path><path d="M232 216h-24V40a16 16 0 0 0-16-16H64a16 16 0 0 0-16 16v176H24a8 8 0 0 0 0 16h208a8 8 0 0 0 0-16ZM64 40h128v176H64Zm104 92a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"></path></g></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5" width="1em" height="1em" viewBox="0 0 256 256"><g fill="currentColor"><path d="M200 40v184H56V40a8 8 0 0 1 8-8h128a8 8 0 0 1 8 8Z" opacity=".2"></path><path d="M232 216h-24V40a16 16 0 0 0-16-16H64a16 16 0 0 0-16 16v176H24a8 8 0 0 0 0 16h208a8 8 0 0 0 0-16ZM64 40h128v176H64Zm104 92a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"></path></g></svg>
                             </div>
                             <div>
                                 <h2 className="font-heading text-sm font-semibold leading-tight text-muted-800 dark:text-white">62K</h2>
@@ -255,7 +255,7 @@ function Dashboard(props) {
                                 <h3 className='-translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-5 w-5 -translate-y-2 text-white opacity-0 transition-all delay-300 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M3 22h18v2H3zm9-10c-12 0-9 9-9 9h18s3-9-9-9Z"></path>
                                     <path fill="currentColor" d="m3 0l1 13c1.22-1.6 3.46-2.51 8-2.51s6.81.93 8 2.53L21 0Zm4 3h10v2H7Zm11 6H6V7h12Z"></path>
                                 </svg>
@@ -264,7 +264,7 @@ function Dashboard(props) {
                                 <h3 className='translate-y-2 font-sans tracking-wider text-white opacity-0 transition-all delay-500 duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
                                     Tracking
                                 </h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="icon h-4 w-4 translate-y-2 text-white opacity-0 transition-all delay-700 duration-300 group-hover:translate-y-0 group-hover:opacity-100" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
                             </div>
                         </div>
                     </div>

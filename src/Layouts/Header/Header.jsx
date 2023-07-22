@@ -58,8 +58,8 @@ const Header = () => {
                             <IconButton className={`flex items-center rounded-full !text-muted-400 hover:!text-primary`}>
                                 <Comment />
                                 <span className="absolute top-0 flex h-3 w-3 ltr:right-0 rtl:left-0">
-                                    <span className="absolute top-[-2px] inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75 ltr:-left-[3px] rtl:-right-[3px]"></span>
-                                    <span className="relative top-[1px] inline-flex h-[6px] w-[6px] rounded-full bg-success"></span>
+                                    <span className="absolute top-[-2px] inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75 ltr:-left-[3px] rtl:-right-[3px]"></span>
+                                    <span className="relative top-[1px] inline-flex h-[6px] w-[6px] rounded-full bg-primary"></span>
                                 </span>
                             </IconButton>
                         </div> 
