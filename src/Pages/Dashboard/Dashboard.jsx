@@ -1,11 +1,5 @@
 import React from 'react';
 
-<<<<<<< HEAD
-function Dashboard(props) {
-    return (
-        <div>
-            Main Dashboard
-=======
 import BreadCumb from '../../Components/UI/BreadCumb/BreadCumb';
 
 import user01 from '../../assets/images/avatar/user-01.svg'
@@ -278,7 +272,6 @@ function Dashboard(props) {
                 </div>
             </div>
             
->>>>>>> new_theme
         </div>
     );
 }
