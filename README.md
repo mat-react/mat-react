@@ -5,4 +5,4 @@ A comprehensive solution for building a responsive and feature-rich admin dashbo
 
 
 
-live: [mat-react.github.io]:mat-react.github.io
+live: <a href="mat-react.github.io" target="blank">mat-react.github.io</a>
