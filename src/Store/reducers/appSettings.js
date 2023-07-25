@@ -1,9 +1,10 @@
-import { APP_MODE_CHANGER, LANGUAGE_CHANGER } from "../actions/types";
+import { APP_MODE_CHANGER, LANGUAGE_CHANGER, SIDEBAR_TOGGLER } from "../actions/types";
 
 const initialState = {
     appMode: "light",
     lang: 'en',
     dir: 'ltr',
+    sidebar: false,
 };
 
 export const appSettingsReducer = (state = initialState, action) => {
@@ -34,7 +35,10 @@ export const appSettingsReducer = (state = initialState, action) => {
 
 
     case LANGUAGE_CHANGER:
-        const {ln, dir} = action.payload
+        let {ln, dir} = action.payload
+        if(dir !== "rtl" && dir !== "ltr"){
+          dir = "ltr"
+        }
         localStorage.setItem("lang", ln)
         localStorage.setItem("dir", dir)
         document.documentElement.lang = ln;
@@ -44,7 +48,12 @@ export const appSettingsReducer = (state = initialState, action) => {
             lang: ln,
             dir: dir,
         };
-
+      
+    case SIDEBAR_TOGGLER:
+      return { 
+        ...state,
+        sidebar: !state.sidebar,
+    };
 
     default:
         return state;

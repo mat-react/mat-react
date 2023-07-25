@@ -27,7 +27,7 @@ function App() {
 
 
     return (
-        <div className='relative overflow-x-hidden text-sm font-normal antialiased vertical full ltr'>
+        <div>
         
             <Layout />
         

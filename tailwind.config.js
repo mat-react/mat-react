@@ -8,8 +8,9 @@ module.exports = {
     extend: {
       colors: {
         // primary: 'rgba(118, 53, 220, <alpha-value>)',
-        primary: 'rgb(var(--color-primary-500)/ <alpha-value>)',
-        "primary-400": "rgb(var(--color-primary-400) / <alpha-value>)",
+        "primary-100": "rgb(var(--color-info-100)/ <alpha-value>)",
+        "primary-400": "rgb(var(--color-info-400)/ <alpha-value>)",
+        primary: "rgb(var(--color-info-500)/ <alpha-value>)",
          
         secondary: "rgb(67 97 238/1)",
         success: "#00ab5580",
@@ -32,7 +33,7 @@ module.exports = {
         "info-500": "rgb(var(--color-info-500)/ <alpha-value>)",
 
         // white: {
-        //   light: "#e0e6ed66",
+        //   light: "#e0e6ed66", 
         // },
 
         // text
@@ -42,4 +43,3 @@ module.exports = {
   },
   plugins: [],
 }
-

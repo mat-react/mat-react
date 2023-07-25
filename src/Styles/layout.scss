@@ -138,6 +138,18 @@
     .vertical .sidebar {
         left: -260px;
     }
+    .vertical.toggle-sidebar {
+        @media (max-width: 1023.9px){
+            .nav_overlay {
+                display: block;
+            }
+        }
+        .sidebar {
+            left: 0;
+        }
+    }
+
+
     @media (min-width: 1024px){
         .vertical .sidebar {
             left: 0;
@@ -145,12 +157,18 @@
         .main-content {
             margin-left: 260px;
         }
-
-        .vertical.toggle-sidebar .sidebar {
-            left: -260px;
-        }
-        .vertical.toggle-sidebar .main-content {
-            margin-left: 0;
+        .vertical {
+            .sidebar {
+                left: 0;
+            }
+            &.toggle-sidebar {
+                .sidebar {
+                    left: -260px;
+                }
+                .main-content {
+                    margin-left: 0;
+                }
+            }
         }
     }
 
