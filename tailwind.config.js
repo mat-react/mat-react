@@ -11,6 +11,7 @@ module.exports = {
         "primary-100": "rgb(var(--color-info-100)/ <alpha-value>)",
         "primary-400": "rgb(var(--color-info-400)/ <alpha-value>)",
         primary: "rgb(var(--color-info-500)/ <alpha-value>)",
+        "primary-500": "rgb(var(--color-info-500)/ <alpha-value>)",
          
         secondary: "rgb(67 97 238/1)",
         success: "#00ab5580",
