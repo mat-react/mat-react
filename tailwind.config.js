@@ -8,10 +8,18 @@ module.exports = {
     extend: {
       colors: {
         // primary: 'rgba(118, 53, 220, <alpha-value>)',
-        "primary-100": "rgb(var(--color-info-100)/ <alpha-value>)",
-        "primary-400": "rgb(var(--color-info-400)/ <alpha-value>)",
-        primary: "rgb(var(--color-info-500)/ <alpha-value>)",
-        "primary-500": "rgb(var(--color-info-500)/ <alpha-value>)",
+        "primary-50": "rgb(var(--color-primary-50)/ <alpha-value>)",
+        "primary-100": "rgb(var(--color-primary-100)/ <alpha-value>)",
+        "primary-200": "rgb(var(--color-primary-200)/ <alpha-value>)",
+        "primary-300": "rgb(var(--color-primary-300)/ <alpha-value>)",
+        "primary-400": "rgb(var(--color-primary-400)/ <alpha-value>)",
+        primary: "rgb(var(--color-primary-500)/ <alpha-value>)",
+        "primary-500": "rgb(var(--color-primary-500)/ <alpha-value>)",
+        "primary-600": "rgb(var(--color-primary-600)/ <alpha-value>)",
+        "primary-700": "rgb(var(--color-primary-700)/ <alpha-value>)",
+        "primary-800": "rgb(var(--color-primary-800)/ <alpha-value>)",
+        "primary-900": "rgb(var(--color-primary-900)/ <alpha-value>)",
+        "primary-950": "rgb(var(--color-primary-950)/ <alpha-value>)",
          
         secondary: "rgb(67 97 238/1)",
         success: "#00ab5580",
@@ -39,6 +47,10 @@ module.exports = {
 
         // text
         dark: "#071437",
+      },
+      opacity: {
+        '8': '.08',
+        '16': '.16',
       }
     }, 
   },

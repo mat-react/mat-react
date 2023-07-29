@@ -12,6 +12,8 @@ import LanguagePopover from './LanguagePopover';
 
 import { sidebarToggler } from '../../Utils/appFuntions';
 
+import user_p from '../../assets/images/avatar/user-01.svg'
+
 const Header = () => { 
 
 
@@ -81,7 +83,7 @@ const Header = () => {
                                 <span>
                                     <img 
                                         className="h-9 w-9 rounded-full object-cover saturate-50 group-hover:saturate-100" 
-                                        src="https://html.vristo.sbthemes.com/assets/images/user-profile.jpeg" alt="User"
+                                        src={user_p} alt="User"
                                     />
                                 </span>
                             </IconButton>

@@ -18,17 +18,17 @@ export const DefaultCardHeader = (props) => {
     );
 }
 
-export const DefaultCardText = (props) => {
+export const DefaultCardText = ({className = "", title = false, text = "", color = "muted-400"}) => {
     return (
-        <div className={props.className}>
+        <div className={className}>
             {
-                props.title ? <h3 className="font-heading text-base font-medium leading-tight text-muted-800 mb-1 dark:text-white">
-                    <span>{props.title}</span>
+                title ? <h3 className="font-heading text-base font-medium leading-tight text-muted-800 mb-1 dark:text-white">
+                    <span>{title}</span>
                 </h3> : ""
             }
             <p className={"font-alt text-xs font-normal leading-normal"}>
-                <span className={`text-${props.color ?? "muted-400"}`}>
-                    {props.text}
+                <span className={`text-${color}`}>
+                    {text}
                 </span>
             </p>
         </div>
