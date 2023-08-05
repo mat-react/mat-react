@@ -1,6 +1,6 @@
 .sidebar {
     .nav-item {
-        a, button {
+        a.exact, button {
             display: flex;
             width: 100%;
             align-items: center;
@@ -39,7 +39,8 @@
                 display: flex;
                 width: 100%;
                 align-items: center;
-                padding: .625rem 2.25rem;
+                padding: 0.3rem 1.8rem;
+                justify-content: flex-start;
 
                 &:before {
                     height: .125rem;
@@ -52,7 +53,7 @@
 
                 &:hover{
                     --tw-bg-opacity: 1;
-                    background-color: rgb(243 244 246/var(--tw-bg-opacity));
+                    // background-color: rgb(243 244 246/var(--tw-bg-opacity));
                     --tw-text-opacity: 1;
                     color: rgb(67 97 238/var(--tw-text-opacity));
 
@@ -65,12 +66,19 @@
 
                 &.active{
                     --tw-text-opacity: 1;
-                    color: rgb(67 97 238/var(--tw-text-opacity));
+                    // color: rgb(67 97 238/var(--tw-text-opacity));
+                    color: rgb(var(--color-primary-500));
 
                     &:before{
                         content: var(--tw-content);
                         --tw-bg-opacity: 1;
-                        background-color: rgb(67 97 238/var(--tw-bg-opacity));
+                        background-color: rgb(var(--color-primary-500));
+                    }
+
+                    @at-root {
+                        .nav-item & {
+                            background-color: rgb(var(--color-primary-500)/0.08);
+                        }
                     }
                 }
             }
@@ -101,18 +109,18 @@
         ul.sub-menu {
             li{
                 a, button{
-                    &:before {
-                        content: var(--tw-content);
-                        --tw-bg-opacity: 1;
-                        background-color: rgb(107 114 128/var(--tw-bg-opacity))
-                    }
+                    // &:before {
+                    //     content: var(--tw-content);
+                    //     --tw-bg-opacity: 1;
+                    //     background-color: rgb(107 114 128/var(--tw-bg-opacity))
+                    // }
 
-                    &:hover{
-                        --tw-bg-opacity: 1;
-                        background-color: rgb(17 24 39/var(--tw-bg-opacity));
-                        --tw-text-opacity: 1;
-                        color: rgb(67 97 238/var(--tw-text-opacity))
-                    }
+                    // &:hover{
+                    //     --tw-bg-opacity: 1;
+                    //     background-color: rgb(17 24 39/var(--tw-bg-opacity));
+                    //     --tw-text-opacity: 1;
+                    //     color: rgb(67 97 238/var(--tw-text-opacity))
+                    // }
                 }
             }
         }

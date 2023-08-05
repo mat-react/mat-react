@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { List, Collapse} from "@mui/material";
 
 import { hasChildren } from "../../Utils/hasMenuChildren";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
  
 
 const MenuLevel = ({ item }) => {
@@ -13,7 +13,7 @@ const MenuLevel = ({ item }) => {
 const SingleLevel = ({item}) => { 
     return(
         <li className="nav-item">
-            <NavLink className="group text-muted-550 dark:text-muted-400 dark:text-muted-400 dark:group-hover:text-white-dark font-medium" to={item.to}>
+            <NavLink className="group text-muted-550 dark:text-muted-400 dark:group-hover:text-white-dark font-medium exact" to={item.to}>
                 <div className="flex items-center">
                     {item.icon ? <item.icon className="shrink-0" /> : null }
                     <span className="ltr:pl-3 rtl:pr-3">
@@ -28,7 +28,7 @@ const SingleLevel = ({item}) => {
 const Single = ({item}) => {
     return(
         <li>
-            <NavLink to="" >{item.title}</NavLink>
+            <NavLink to={item?.to} >{item.title}</NavLink>
         </li>
     )
 }
@@ -37,14 +37,28 @@ const MultiLevel = ({ item }) => {
   const { items: children } = item;
   const [open, setOpen] = useState(false);
 
+  const location = useLocation();
+  // const routeName = location.pathname; 
+  const isSubmenuActive = location.pathname.includes(item.route_start)
+
+  useEffect(() => {
+    if(isSubmenuActive && item.route_start){
+      setOpen(true)
+    }
+  }, [isSubmenuActive, item.route_start])
+
   const handleClick = () => {
+    const sub_menus = document.getElementsByClassName('sidebar_sub_container');
+    for (const sub_menu of sub_menus) {
+      sub_menu.classList.remove('active');
+    }
     setOpen((prev) => !prev);
   };
 
   return (
     <React.Fragment>
       <li className="nav-item group" >
-        <button type="button" className="nav-link group text-muted-550 dark:text-muted-400 dark:group-hover:text-white-dark font-medium" onClick={handleClick}>
+        <button type="button" className={["nav-link sidebar_sub_container group text-muted-550 dark:text-muted-400 dark:group-hover:text-white-dark font-medium", open ? "" : ""].join(" ")} onClick={handleClick}>
             <div className="flex items-center">
                 <item.icon className="shrink-0" />
                 <span className="ltr:pl-3 rtl:pr-3">{item.title}</span>
@@ -55,14 +69,14 @@ const MultiLevel = ({ item }) => {
                 </svg>
             </div>
         </button>
+        <Collapse in={open} timeout="auto" unmountOnExit>
+          <List  component="ul" className="sub-menu text-muted-550 dark:text-muted-400" disablePadding>
+            {children.map((child, key) => (
+              <Single key={key} item={child} />
+            ))}
+          </List>
+        </Collapse>
       </li>
-      <Collapse in={open} timeout="auto" unmountOnExit>
-        <List  component="ul" className="sub-menu text-muted-550 dark:text-muted-400" disablePadding>
-          {children.map((child, key) => (
-            <Single key={key} item={child} />
-          ))}
-        </List>
-      </Collapse>
     </React.Fragment>
   );
 };

@@ -24,7 +24,7 @@ const Sidebar = () => {
 
         <>
             <div onClick={() => sidebarToggler()} className='fixed inset-0 z-50 bg-[black]/40 lg:hidden nav_overlay hidden'></div>
-            <nav className="sidebar fixed top-0 bottom-0 z-50 dark:ltr:border-r dark:rtl:border-l border-muted-200 dark:border-muted-700 h-full min-h-screen w-[260px] dark:shadow-none shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] transition-all duration-300">
+            <nav className="sidebar fixed top-0 border-r z-50 dark:ltr:border-r dark:rtl:border-l border-muted-200 dark:border-muted-700 h-full min-h-screen w-[260px] dark:shadow-none transition-all duration-300">
                 <div className="h-full bg-white dark:bg-muted-800">
                     
                     <div className="flex items-center justify-between px-4 py-3">
@@ -48,7 +48,7 @@ const Sidebar = () => {
                                 if(item.type === "title"){
                                     return (
                                         <li key={key}>
-                                            <h2 className="-mx-4 pb-0 flex dark:text-muted-200 text-muted-600 items-center mt-[10px] py-3 px-7 font-semibold uppercase text-[12px]">
+                                            <h2 className="-mx-4 mb-1 pb-0 flex dark:text-muted-200 text-muted-600 items-center mt-[10px] py-3 px-7 font-semibold uppercase text-[12px]">
                                                 <span>{item.title}</span>
                                             </h2>
                                         </li>

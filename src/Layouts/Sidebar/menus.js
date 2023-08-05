@@ -1,4 +1,4 @@
-import { Dashboard, Storefront, Leaderboard, Mail, BarChart, Widgets } from "@mui/icons-material";
+import { Dashboard, Storefront, Leaderboard, Mail, BarChart, Widgets, WidgetsRounded } from "@mui/icons-material";
 
 export const menus = [
   {
@@ -27,26 +27,40 @@ export const menus = [
       {
         title: "Inbox",
         icon: Leaderboard,
-        items: [
-          {
-            title: "Sent",
-          },
-          {
-            title: "Sent",
-          },
-          {
-            title: "Sent",
-          }
-        ]
+        to: "mail/inbox"
       },
       { 
         title: "Sent",
+        to: "mail/sent"
       }
     ]
   },
   {
     type: "title", 
     title: "UI Element"
+  }, 
+  {
+    icon: WidgetsRounded,
+    title: "Components",
+    route_start: "ui/components",
+    items: [
+      {
+        title: "Alert",
+        to: "ui/components/alert",
+      },
+      { 
+        title: "Progress",
+        to: "ui/components/progress"
+      },
+      { 
+        title: "Spinner",
+        to: "ui/components/spinner"
+      },
+      { 
+        title: "Toast",
+        to: "ui/components/toast"
+      }
+    ]
   }, 
   {
     icon: BarChart,
