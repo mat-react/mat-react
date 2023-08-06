@@ -47,6 +47,10 @@ export const menus = [
       {
         title: "Alert",
         to: "ui/components/alert",
+      }, 
+      { 
+        title: "Button",
+        to: "ui/components/button",
       },
       { 
         title: "Progress",

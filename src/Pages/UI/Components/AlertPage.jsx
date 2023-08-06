@@ -3,14 +3,14 @@ import React from 'react';
 import { DefaultCard, DefaultCardFooter } from '../../../Components/UI/Cards/Default';
 import CodeDisplay from '../../../Components/Code/CodeDisplay';
 
-import Alert from '../../../@/Components/UI/Alert';
+import Alert from '../../../Components/UI/Alert';
 import { KeyOutlined } from '@mui/icons-material';
 import { Button } from '@mui/material';
 
 
 function AlertPage(props) {
 
-    const basic_alert_code = `import Alert from '@/Components/UI/Alert';
+    const basic_alert_code = `import Alert from './Components/UI/Alert';
 
 function Basic() {
     return <> 
@@ -31,7 +31,7 @@ function Basic() {
 
 export default Basic;`
 
-const icon_alert_code = `import Alert from '@/Components/UI/Alert';
+const icon_alert_code = `import Alert from './Components/UI/Alert';
 import { KeyOutlined } from '@mui/icons-material';
 
 function AlertIcon() {
@@ -50,7 +50,7 @@ function AlertIcon() {
 
 export default Basic;`
 
-const custom_closable_code = `import Alert from '@/Components/UI/Alert';
+const custom_closable_code = `import Alert from './Components/UI/Alert';
 
 function closable() {
     return <> 
@@ -66,7 +66,7 @@ function closable() {
 export default Basic;`
 
 
-const title_and_des = `import Alert from '@/Components/UI/Alert';
+const title_and_des = `import Alert from './Components/UI/Alert';
 
 function TitleDes() {
     return <> 

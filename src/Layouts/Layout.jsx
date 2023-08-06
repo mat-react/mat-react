@@ -10,7 +10,7 @@ function Layout() {
         
             <Sidebar /> 
 
-            <div className='main-content'>
+            <div className='main-content overflow-x-hidden'>
                 <Header />
 
                 <AppContents />

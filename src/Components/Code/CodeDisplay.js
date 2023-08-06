@@ -5,8 +5,8 @@ import CodeHLJS from "./CodeHLJS";
 import { Collapse } from "@mui/material";
 import { Code, ContentCopy } from "@mui/icons-material";
 
-import { RoundedButton } from "../../@/Components/UI/Button";
-import Toast from "../../@/Components/UI/Toast";
+import { RoundedButton } from "../../Components/UI/Button";
+import Toast from "../../Components/UI/Toast";
 
 
 function CodeDisplay({ children }) {
