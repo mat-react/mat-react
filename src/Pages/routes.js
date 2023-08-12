@@ -10,6 +10,8 @@ const NotFound = React.lazy(() => import('./Error/NotFound'))
 const UiWidgets = React.lazy(() => import("./UI/Widgets/UiWidgets"))
 const UIAlert = React.lazy(() => import("./UI/Components/AlertPage"))
 const UIButton = React.lazy(() => import("./UI/Components/ButtonPage"))
+const UIAvatar = React.lazy(() => import("./UI/Components/AvatarPage"))
+const UIDropdown = React.lazy(() => import("./UI/Components/DropdownPage"))
 
 
 
@@ -21,6 +23,9 @@ const routes = [
 
     {name: "Alert", component: UIAlert, exact: true, path: "/ui/components/alert"},
     {name: "Button", component: UIButton, exact: true, path: "/ui/components/button"},
+    {name: "Avatar", component: UIAvatar, exact: true, path: "/ui/components/avatar"},
+    {name: "Dropdown", component: UIDropdown, exact: true, path: "/ui/components/dropdown"},
+
     {name: "UiWidgets", component: UiWidgets, exact: true, path: "/ui/widgets"},
 
     {name: "NotFound", component: NotFound, exact: true, path: "*"},

@@ -45,12 +45,20 @@ export const menus = [
     route_start: "ui/components",
     items: [
       {
+        title: "Avatar",
+        to: "ui/components/avatar",
+      }, 
+      {
         title: "Alert",
         to: "ui/components/alert",
       }, 
       { 
         title: "Button",
         to: "ui/components/button",
+      },
+      { 
+        title: "Dropdown",
+        to: "ui/components/dropdown",
       },
       { 
         title: "Progress",
