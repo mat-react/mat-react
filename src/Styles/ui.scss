@@ -154,5 +154,52 @@ button, a{
         height: 3rem;
     }
 }
-
 // button
+
+
+
+.mat-card {
+    position: relative;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    width: 100%;
+
+    &.mat-card-white{
+        --tw-border-opacity: 1;
+        --tw-bg-opacity: 1;
+        background-color: #fff;
+        background-color: rgb(255 255 255/var(--tw-bg-opacity));
+        border-color: rgb(var(--color-muted-200)/var(--tw-border-opacity));
+        border-width: 1px
+    }
+
+    &.mat-card-rounded {
+        border-radius: 0.375rem;
+    }
+}
+
+.mat-icon-box {
+    align-items: center;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    position: relative;
+
+    &.mat-box-xs {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    &.mat-box-full {
+        border-radius: 9999px;
+    }
+}
+
+:is(.dark .mat-card.mat-card-white) {
+    --tw-border-opacity: 1;
+    --tw-bg-opacity: 1;
+    background-color: rgb(var(--color-muted-800)/1);
+    background-color: rgb(var(--color-muted-800)/var(--tw-bg-opacity));
+    border-color: rgb(var(--color-muted-700)/var(--tw-border-opacity))
+}

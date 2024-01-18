@@ -1,4 +1,4 @@
-import colors from 'tailwindcss/colors'
+import colors from 'tailwindcss/colors' 
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
         "primary-800": "rgb(var(--color-primary-800)/ <alpha-value>)",
         "primary-900": "rgb(var(--color-primary-900)/ <alpha-value>)",
         "primary-950": "rgb(var(--color-primary-950)/ <alpha-value>)",
-         
+            
         secondary: "rgb(67 97 238/1)",
         success: colors.teal,
         muted: colors.slate,

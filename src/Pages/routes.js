@@ -4,6 +4,7 @@ import React from "react";
 const Dashboard = React.lazy(() => import('./Dashboard/Dashboard'))
 const Travel = React.lazy(() => import('./Dashboard/Travel'))
 const Ecommerce = React.lazy(() => import('./Dashboard/Ecommerce'))
+const Analytics = React.lazy(() => import('./Dashboard/Analytics'))
 const NotFound = React.lazy(() => import('./Error/NotFound'))
 
 // ui
@@ -18,6 +19,7 @@ const routes = [
     {name: "Home", component: Dashboard, exact: true, path: "/"},
     {name: "Travel", component: Travel, exact: true, path: "/dashboard/Travel"},
     {name: "Ecommerce", component: Ecommerce, exact: true, path: "/dashboard/ecommerce"},
+    {name: "Analytics", component: Analytics, exact: true, path: "/dashboard/analytics"},
 
     {name: "Alert", component: UIAlert, exact: true, path: "/ui/components/alert"},
     {name: "Button", component: UIButton, exact: true, path: "/ui/components/button"},
